@@ -131,16 +131,16 @@ services:
     volumes:
       - ./dashboard:/app/dashboard
 
-  # Rasa chatbot service
-  rasa:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.rasa
-    container_name: rasa
-    ports:
-      - "5005:5005"
-    volumes:
-      - ./chatbot:/app/chatbot
+  # # Rasa chatbot service
+  # rasa:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/Dockerfile.rasa
+  #   container_name: rasa
+  #   ports:
+  #     - "5005:5005"
+  #   volumes:
+  #     - ./chatbot:/app/chatbot
 
   # Prometheus service
   prometheus:
